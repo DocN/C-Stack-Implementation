@@ -37,6 +37,7 @@ int const Stack::top() {
 	if (count >= 0) {
 		return A[(count)];
 	}
+	return -1;
 }
 
 int const Stack::empty() {
