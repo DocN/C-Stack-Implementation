@@ -17,16 +17,16 @@ bool Stack::push(int value) {
 		cout << "Stack is full!" << endl;
 		return false;
 	}
-	A[count] = value;
 	count++;
+	A[count] = value;
 	return true;
 }
 
 int Stack::pop() {
 	if (count > 0) {
 		//check if there are an elements on the stack
-		count--;
 		int popedVal = A[count];
+		count--;
 		return popedVal;
 	}
 	cout << "no elements to pop off the stack" << endl;
@@ -35,7 +35,7 @@ int Stack::pop() {
 
 int const Stack::top() {
 	if (count >= 0) {
-		return A[(count-1)];
+		return A[(count)];
 	}
 }
 
@@ -53,8 +53,11 @@ int const Stack::full() {
 	return false;
 }
 
-int const Stack::print() {
-	for (int i = 0; i < (count-1); i++) {
-		count << A[i] << endl;
+void const Stack::print() {
+	cout << "printing" << endl;
+	cout << "---------------------------" << endl;
+	for (int i = 0; i <= (count); i++) {
+		cout << A[i] << endl;
 	}
+	cout << "---------------------------" << endl;
 }

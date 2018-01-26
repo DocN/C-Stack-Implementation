@@ -7,7 +7,7 @@ class Stack {
 		int const top();
 		int const empty();
 		int const full();
-		int const print();
+		void const print();
 		
 	private: 
 		const static int MAX = 10;
