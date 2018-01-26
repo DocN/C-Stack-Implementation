@@ -45,3 +45,10 @@ int const Stack::empty() {
 	}
 	return false;
 }
+
+int const Stack::full() {
+	if (count == (MAX - 1)) {
+		return true;
+	}
+	return false;
+}
