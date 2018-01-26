@@ -52,3 +52,9 @@ int const Stack::full() {
 	}
 	return false;
 }
+
+int const Stack::print() {
+	for (int i = 0; i < (count-1); i++) {
+		count << A[i] << endl;
+	}
+}
