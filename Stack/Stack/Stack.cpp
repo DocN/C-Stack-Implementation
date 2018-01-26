@@ -38,3 +38,10 @@ int const Stack::top() {
 		return A[(count-1)];
 	}
 }
+
+int const Stack::empty() {
+	if (count == -1) {
+		return true;
+	}
+	return false;
+}

@@ -5,7 +5,7 @@ class Stack {
 		bool push(int);
 		int pop();
 		int const top();
-
+		int const empty();
 		
 	private: 
 		const static int MAX = 10;
