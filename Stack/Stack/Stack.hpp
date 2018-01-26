@@ -2,8 +2,11 @@
 class Stack {
 	public:
 		Stack();
+		bool push(int);
 
 	private: 
-		int A[10];
-		int max;
+		const static int MAX = 10;
+		int A[MAX];
+		int count;
+		
 };
