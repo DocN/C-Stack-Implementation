@@ -3,7 +3,7 @@
 using namespace std;
 Stack::Stack() {
 	//initial position in array 
-	count = 0;
+	count = -1;
 }
 
 /*
@@ -20,4 +20,15 @@ bool Stack::push(int value) {
 	A[count] = value;
 	count++;
 	return true;
+}
+
+int Stack::pop() {
+	if (count > 0) {
+		//check if there are an elements on the stack
+		count--;
+		int popedVal = A[count];
+		return popedVal;
+	}
+	cout << "no elements to pop off the stack" << endl;
+	return -1;
 }
