@@ -32,3 +32,9 @@ int Stack::pop() {
 	cout << "no elements to pop off the stack" << endl;
 	return -1;
 }
+
+int const Stack::top() {
+	if (count >= 0) {
+		return A[(count-1)];
+	}
+}
