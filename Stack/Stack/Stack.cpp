@@ -73,10 +73,20 @@ int Stack::getCount() {
 ostream& operator<<(ostream& os, const Stack &obj) {
 	os << "Printing" << endl;
 	os << "-------------------------" << endl;
-	for (int i = 0; i < obj.count; i++) {
+	for (int i = 0; i <=obj.count; i++) {
 		os << obj.A[i] << endl;
 	}
 	os << "-------------------------" << endl;
 
 	return os;
 }
+
+// A simplistic implementation of operator= (do not use)
+Stack& Stack::operator= (Stack &oldStack)
+{
+	for (int i = 0; i < oldStack.getCount(); i++) {
+		this->push(oldStack.getStack()[i]);
+	}
+	return *this;
+}
+

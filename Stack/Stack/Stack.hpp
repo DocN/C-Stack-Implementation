@@ -14,6 +14,8 @@ class Stack {
 		int * getStack();
 		int getCount();
 		friend ostream& operator<<(ostream& os, const Stack &obj);
+		Stack& operator= (Stack &str);
+
 	private: 
 		static constexpr int MAX = 10;
 		int A[MAX];
