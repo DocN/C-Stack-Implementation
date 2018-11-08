@@ -1,2 +1,1 @@
-# COMP.3512.Lab2
-Lab2
+A simple implemntation of a stack in C++ 
